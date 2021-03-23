@@ -18,8 +18,12 @@ public class StudentConfig {
         return args -> {
             repository.saveAll(
                     List.of(
-                            new Student("Kidus", LocalDate.of(2020, FEBRUARY, 15)),
-                            new Student("Beza", LocalDate.of(2020, SEPTEMBER, 14))
+                            new Student("Kidus",
+                                    LocalDate.of(1996, FEBRUARY, 15),
+                                    "kidusmt@gmail.com"),
+                            new Student("Beza",
+                                    LocalDate.of(1995, SEPTEMBER, 14),
+                                    "beza@gmail.com")
                     )
             );
         };
